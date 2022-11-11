@@ -1,0 +1,27 @@
+BIN_DIR="$(dirname $(realpath "${BASH_SOURCE[0]}"))"
+
+if [[ $# -ne 2 ]]; then
+   echo "Please provide two valid arguments"
+   exit 0
+fi
+
+if ! command -v pihole &> /dev/null
+then
+    echo "pihole command not found, please include it in the path"
+    exit
+fi
+
+if [ $1 != "block" ] && [ $1 != "unblock" ] ; then
+    echo "Missing option block or unblock"
+    exit 0
+fi
+    
+FILE="$BIN_DIR/lists/$2"
+if test -f "$FILE"; then 
+    DOMAINS=$(<$FILE)
+    if [ $1 = "block" ]; then
+        pihole --wild $DOMAINS
+    else
+        pihole --wild -d $DOMAINS
+    fi    
+fi

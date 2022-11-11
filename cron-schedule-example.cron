@@ -1,0 +1,11 @@
+# minute    hour    day     month    day of the week
+# 0-59      0-23    1-31    1-12     0-7 (0 and 7 are both sunday)
+# this can be added in the system crontab
+
+# block youtube monday 5am - friday 5pm
+*  5 * * 1 pihole-blocker block youtube
+* 17 * * 5 pihole-blocker unblock youtube
+
+# block instagram 10pm - 5pm everyday
+* 22 * * * pihole-blocker block instagram
+*  5 * * * pihole-blocker unblock instagram

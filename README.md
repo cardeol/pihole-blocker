@@ -1,2 +1,23 @@
 # pihole-blocker
-A command line tool for pihole to block/unblock specific lists or use it for scheduling, works as a parental filter
+
+Schedule pi-hole blocks for espcific lists
+
+## Installation
+
+```
+./install.sh
+```
+
+Files will be copied into /usr/lib/pihole-blocker
+
+## Usage
+
+To block
+```
+pihole-blocker block youtube
+```
+
+To unblock
+```
+pihole-blocker unblock youtube
+```
