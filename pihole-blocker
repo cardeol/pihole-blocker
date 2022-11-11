@@ -1,7 +1,5 @@
 BIN_DIR=$(dirname $(realpath "$0") )
 
-echo "folder is $BIN_DIR"
-
 if [[ $# -ne 2 ]]; then
    echo "Please provide two valid arguments"
    exit 0
