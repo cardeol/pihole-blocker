@@ -20,5 +20,6 @@ sudo chmod +x pihole-blocker "${DEST_FOLDER}/pihole-blocker"
 sudo cp -r lists "${DEST_FOLDER}/"
 sudo ln -sf "${DEST_FOLDER}/pihole-blocker" "$BIN_FOLDER/pihole-blocker"
 
-echo "Installation complete. Files copied to $DEST_FOLDER"
+echo "Installation complete."
+echo "Files copied to $DEST_FOLDER/"
 cd $cwd
