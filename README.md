@@ -23,9 +23,10 @@ sudo curl -sSL https://install.pi-hole.net | bash
 
 Files will be copied into /usr/lib/pihole-blocker
 
-## Usage (Lists defined in /lists)
+## Usage / Examples (Lists defined as a text file in /lists)
 
-To block
+Blocking / Unblocking specific lists
+
 ```
 pihole-blocker block youtube
 ```
