@@ -2,7 +2,16 @@
 
 Schedule pi-hole blocks for espcific lists
 
+## Requeriments
+
+1. pihole (linux / pi)
+
+```
+sudo curl -sSL https://install.pi-hole.net | bash
+```
+
 ## Installation
+
 
 ```
 ./install.sh
