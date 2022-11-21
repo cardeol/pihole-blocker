@@ -1,6 +1,10 @@
 # pihole-blocker
 
-Schedule pi-hole blocks for espcific lists
+Command line to add predefined lists to pi-hole.
+
+* It can be used for parental control enabling and disabling sites at any specific time.
+* It can be secheduled via linux crontab
+
 
 ## Requeriments
 
@@ -19,7 +23,7 @@ sudo curl -sSL https://install.pi-hole.net | bash
 
 Files will be copied into /usr/lib/pihole-blocker
 
-## Usage
+## Usage (Lists defined in /lists)
 
 To block
 ```
